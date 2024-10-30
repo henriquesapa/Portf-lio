@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/public/css/styles.css">
+</head>
+
+<body class=" font-sans text-white">
+
+    <!-- Cabeçalho -->
+    <header class="p-4 shadow-lg border-b border-yellow-200 bg-green-700/95 text-slate-50">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-xl font-semibold">Portfólio Pessoal</h1>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="#about" class="font-medium hover:text-gray-300">Quem sou eu</a></li>
+                    <li><a href="#services" class="font-medium hover:text-gray-300">O que eu faço</a></li>
+                    <li><a href="#projects" class="font-medium hover:text-gray-300">Meus projetos</a></li>
+                    <li><a href="#contact" class="font-medium hover:text-gray-300">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Seção "Quem sou eu" -->
+    <section id="about" class="p-8 bg-white text-black">
+        <div class="container mx-auto flex flex-col md:flex-row items-center space-y-6 md:space-y-0 md:space-x-10">
+            <div class="md:w-1/2 text-center md:text-left">
+                <h2 class="text-3xl font-bold text-green-700 mb-4">Henrique Silva Aparecido</h2>
+                <p class="text-lg">Tenho 25 anos, formado em Ciências da Computação pela Universidade Federal de
+                    Rondônia (UNIR).</p>
+                <p class="mt-4">Atualmente trabalho como desenvolvedor web.</p>
+            </div>
+            <div class="md:w-1/2 flex justify-end">
+                <img src="/public/images/henrique.jpeg" alt="Foto de Henrique Silva Aparecido"
+                    class="w-48 h-48 md:w-64 md:h-64 rounded-full object-cover shadow-lg">
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção "Projetos" -->
+    <section id="projects" class="p-8 bg-gray-100 text-black">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold text-green-700 mb-6">Projetos</h2>
+
+            <div class="grid md:grid-cols-2 gap-y-16 gap-x-10 items-center">
+                <!-- Projeto 1 -->
+                <div class="scale-[55%] h-[50dvh] flex justify-center md:justify-end  rounded-lg flex-col">
+                    <iframe src="https://transparencia.sedam.ro.gov.br/" title="Portal da Transparência"
+                        class=" rounded-lg shadow-lg w-full h-full bg-gray-900 px-4 py-4">
+                    </iframe>
+                    <img class="scale-[130%] mt-5" src="/public/images/png_note.png" alt="Portal da SEDAM" />
+                </div>
+
+                <div class="text-start flex flex-col gap-5 justify-center">
+                    <h3 class="text-2xl font-semibold">Portal da Transparência</h3>
+                    <p>O Portal da Transparência da Secretaria de Estado do Desenvolvimento Ambiental é uma iniciativa
+                        que visa promover o controle social ao disponibilizar dados e informações públicas da SEDAM de
+                        forma acessível aos cidadãos.</p>
+                    <a href="https://transparencia.sedam.ro.gov.br/" target="_blank" rel="noreferrer"
+                        class="inline-block text-white bg-green-500 py-3 px-6 rounded-2xl font-semibold transition-all duration-300 transform hover:bg-gradient-to-r hover:from-green-400 hover:to-green-500 focus:outline-none focus:ring-4 active:ring-green-300 active:bg-green-700">
+                        Consulte
+                    </a>
+                </div>
+
+                <!-- Projeto 2 -->
+                <div class="scale-[55%] h-[50dvh] flex justify-center md:justify-end  rounded-lg flex-col">
+                    <iframe src="https://www.sedam.ro.gov.br/" title="Portal da Transparência"
+                        class=" rounded-lg shadow-lg w-full h-full bg-gray-900 px-4 py-4">
+                    </iframe>
+                    <img class="scale-[130%] mt-5" src="/public/images/png_note.png" alt="Portal da SEDAM" />
+                </div>
+
+                <div class="text-start flex flex-col gap-5 justify-center">
+                    <h3 class="text-2xl font-semibold">Portal da SEDAM</h3>
+                    <p>O Portal da Secretaria de Estado do Desenvolvimento Ambiental (SEDAM) facilita o acesso às
+                        informações e serviços oferecidos pela SEDAM aos cidadãos.</p>
+                    <a href="https://www.sedam.ro.gov.br/" target="_blank" rel="noreferrer"
+                        class="inline-block text-white bg-green-500 py-3 px-6 rounded-2xl font-semibold transition-all duration-300 transform hover:bg-gradient-to-r hover:from-green-400 hover:to-green-500 focus:outline-none focus:ring-4 active:ring-green-300 active:bg-green-700">
+                        Consulte
+                    </a>
+                </div>
+
+                <!-- Projeto 3 -->
+                <div class="flex justify-center md:justify-end">
+                    <img class="w-5/5" src="/public/images/SGTP.png" alt="SGTP" class="w-full max-w-xs" />
+                </div>
+                <div class="text-start flex flex-col gap-5 justify-center">
+                    <h3 class="text-2xl font-semibold">SGTP</h3>
+                    <p>O sistema SGTP foi desenvolvido para auxiliar na gestão de processos de licenciamento e outras
+                        operações da SEDAM.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="/js/script.js"></script>
+</body>
+
+</html>
